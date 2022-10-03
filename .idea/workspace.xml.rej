@@ -1,0 +1,22 @@
+diff a/.idea/workspace.xml b/.idea/workspace.xml	(rejected hunks)
+@@ -1,13 +1,20 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="647cff7f-21d7-4e05-a8ca-843a3c4606e0" name="Default Changelist" comment="">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/TokenConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/TokenConstants.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/util/JwtUtils.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" afterDir="false" />
+     </list>
+     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />

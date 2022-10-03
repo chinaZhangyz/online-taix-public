@@ -18,7 +18,9 @@ public class RefreshController {
     public ResponseResult refreshToken(@RequestBody TokenResponse tokenResponse){
 
         String refreshToken = tokenResponse.getRefreshToken();
+        String accessToken = tokenResponse.getAccessToken();
         System.out.println("生成原来的 refreshToken："+refreshToken);
+        System.out.println("生成原来的 accessToken："+accessToken);
         return tokenService.refreshToken(refreshToken);
     }
 }

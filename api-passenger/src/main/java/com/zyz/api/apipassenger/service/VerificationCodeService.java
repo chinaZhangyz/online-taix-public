@@ -70,7 +70,7 @@ public class VerificationCodeService {
         verificationCodeDTO.setPassengerPhone(passengerPhone);
         passengerUserClient.loginRegister(verificationCodeDTO);
         //颁发令牌
-        System.out.println("颁发令牌：");
+//        System.out.println("颁发令牌：");
         //不能使用魔法值 ，使用枚举类 或者class
         String accessToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
         String refreshToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);

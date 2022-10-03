@@ -9,7 +9,8 @@ public enum CommonStatusEnum {
     /*
     * 成功
     */
-    TOKEN_ERROE("1199","token error"),
+    TOKEN_ERROE("1199","token 错误"),
+
 
     SUCCESS("1","success"),
     /*

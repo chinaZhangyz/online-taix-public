@@ -32,7 +32,7 @@ public class TokenService {
         String refreshTokenRedis = stringRedisTemplate.opsForValue().get(refreshTokenKey);
 
         //效验refreshToken
-        if (StringUtils.isBlank(refreshTokenRedis) || !refreshTokenSrc.trim().equals(refreshTokenRedis.trim())) {
+        if ((StringUtils.isBlank(refreshTokenRedis)) || (!refreshTokenSrc.trim().equals(refreshTokenRedis.trim()))) {
             return ResponseResult.fail(CommonStatusEnum.TOKEN_ERROE.getCode(), CommonStatusEnum.TOKEN_ERROE.getValue());
         }
         //生成双token
@@ -43,6 +43,7 @@ public class TokenService {
 
         stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken, 30, TimeUnit.DAYS);
         stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken, 31, TimeUnit.DAYS);
+
         TokenResponse tokenResponse = new TokenResponse();
         tokenResponse.setRefreshToken(refreshToken);
         tokenResponse.setAccessToken(accessToken);
