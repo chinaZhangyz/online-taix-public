@@ -63,13 +63,9 @@ public class VerificationCodeService {
         System.out.println(codeRedis);
         System.out.println("redis中的key是："+codeRedis);
         //效验验证码
-        if (StringUtils.isBlank(codeRedis)){
+        if (StringUtils.isBlank(codeRedis)||!verificationCode.trim().equals(codeRedis.trim())){
             return ResponseResult.fail(CommonStatusEnum.VERIFICATION_CODE_ERROR.getCode(),CommonStatusEnum.VERIFICATION_CODE_ERROR.getValue());
         }
-        if (!verificationCode.trim().equals(codeRedis.trim())){
-            return ResponseResult.fail(CommonStatusEnum.VERIFICATION_CODE_ERROR.getCode(),CommonStatusEnum.VERIFICATION_CODE_ERROR.getValue());
-        }
-
         //判断原来是否有用户，并进行对应处理
         System.out.println("判断原来是否有用户，并进行对应处理:");
         VerificationCodeDTO verificationCodeDTO = new VerificationCodeDTO();

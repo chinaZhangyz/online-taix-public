@@ -21,11 +21,11 @@ public class JwtUtils {
     private static final String JWT_KEY_IDENTITY = "identity";
 
     //生成token
-    public static String generatorToken(String passengerPhone, String identity,String tokenType) {
+    public static String generatorToken(String passengerPhone, String identity, String tokenType) {
         Map<String, String> map = new HashMap<>();
         map.put(JWT_KEY_PHONE, passengerPhone);
         map.put(JWT_KEY_IDENTITY, identity);
-        map.put(JWT_TOKEN_TYPE,tokenType);
+        map.put(JWT_TOKEN_TYPE, tokenType);
         //token过期时间
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE, 1);
@@ -44,7 +44,7 @@ public class JwtUtils {
     }
 
     //解析token
-    public static TokenResult parseToken(String token) {
+    public static TokenResult checkToken(String token) {
         DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
         String phone = verify.getClaim(JWT_KEY_PHONE).asString();
         String identity = verify.getClaim(JWT_KEY_IDENTITY).asString();
@@ -55,15 +55,4 @@ public class JwtUtils {
         return tokenResult;
     }
 
-    public static void main(String[] args) {
-
-
-        String s = generatorToken("15105673488", "1","accessToken");
-        System.out.println("生成的tokenL:" + s);
-        System.out.println("解析后--------------------------");
-        TokenResult tokenResult = parseToken(s);
-        System.out.println("手机号：" + tokenResult.getPhone());
-        System.out.println("身份证：" + tokenResult.getIdentity());
-//        System.out.println("解析后token的值:"+parseToken("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJwYXNzZW5nZXJQaG9uZSI6IjE1MTA1NjczNDg4IiwiZXhwIjoxNjY0NjEzOTQzfQ.zwF64zmBYgUp7-wSf1TXPpgaDB3-x0ZKmBFurDyWzQU"));
-    }
 }
