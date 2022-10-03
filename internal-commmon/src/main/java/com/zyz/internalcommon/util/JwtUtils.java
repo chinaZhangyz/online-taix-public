@@ -44,7 +44,7 @@ public class JwtUtils {
     }
 
     //解析token
-    public static TokenResult checkToken(String token) {
+    public static TokenResult parseToken(String token){
         DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
         String phone = verify.getClaim(JWT_KEY_PHONE).asString();
         String identity = verify.getClaim(JWT_KEY_IDENTITY).asString();
@@ -53,6 +53,20 @@ public class JwtUtils {
         tokenResult.setPhone(phone);
         tokenResult.setIdentity(identity);
         return tokenResult;
-    }
 
+    }
+    /**
+     * 校验token，主要判断token是否异常
+     * @param token
+     * @return
+     */
+    public static TokenResult checkToken(String token){
+        TokenResult tokenResult = null;
+        try {
+            tokenResult = JwtUtils.parseToken(token);
+        }catch (Exception e){
+
+        }
+        return tokenResult;
+    }
 }

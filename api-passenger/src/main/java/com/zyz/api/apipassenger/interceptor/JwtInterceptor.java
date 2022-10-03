@@ -33,7 +33,7 @@ public class JwtInterceptor implements HandlerInterceptor {
         String resultString = "";
 
         //解析token
-        TokenResult tokenResult = JwtUtils.checkToken(token);
+        TokenResult tokenResult = JwtUtils.parseToken(token);
 
         if (tokenResult == null) {
             resultString = "token invalid";

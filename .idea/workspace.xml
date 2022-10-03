@@ -4,10 +4,9 @@
     <list default="true" id="647cff7f-21d7-4e05-a8ca-843a3c4606e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/util/JwtUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/util/JwtUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -175,9 +174,19 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.26028138" />
+        <option name="contentProportion" value="0.1590909" />
         <treeState>
-          <expand />
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@739bb0d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@739bb0d6" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@8360ad5d" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
           <select />
         </treeState>
       </serviceView>
@@ -214,7 +223,7 @@
       <workItem from="1664678503688" duration="724000" />
       <workItem from="1664712219557" duration="141000" />
       <workItem from="1664758635575" duration="2295000" />
-      <workItem from="1664762584369" duration="1427000" />
+      <workItem from="1664762584369" duration="3342000" />
     </task>
     <servers />
   </component>
@@ -241,6 +250,24 @@
           <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java</url>
           <line>29</line>
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/util/JwtUtils.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/JwtInterceptor.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java</url>
+          <line>21</line>
+          <properties class="com.zyz.api.apipassenger.service.TokenService" method="refreshToken">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="16" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
