@@ -3,14 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="647cff7f-21d7-4e05-a8ca-843a3c4606e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/controller/RefreshController.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/controller/RefreshController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/VerificationCodeService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/RefreshController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/RefreshController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/CommonStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/constant/CommonStatusEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/dto/TokenResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/dto/TokenResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/dto/ResponseResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/src/main/java/com/zyz/internalcommon/dto/ResponseResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/constant/CommonStatusEnum.class" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/constant/CommonStatusEnum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/dto/ResponseResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/dto/ResponseResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/zyz/dto/PassengerUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/zyz/mapper/PassengerUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/zyz/mapper/PassengerUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/zyz/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/src/main/java/com/zyz/service/UserService.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -178,7 +181,7 @@
   <component name="ServiceViewManager">
     <option name="allServicesViewState">
       <serviceView>
-        <option name="contentProportion" value="0.009745534" />
+        <option name="contentProportion" value="0.18787223" />
         <treeState>
           <expand>
             <path>
@@ -270,6 +273,11 @@
           <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java</url>
           <line>23</line>
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/service/TokenService.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="21" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

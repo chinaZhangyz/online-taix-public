@@ -1,4 +1,4 @@
-package com.zyz.dto;
+package com.zyz.internalcommon.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PassengerUser {
-    private Long id;
+    private Integer id;
 
     private LocalDateTime gmtCreate;
 
@@ -23,5 +23,6 @@ public class PassengerUser {
 
     private Byte state;
 
+    private String profilePhoto;
 
 }

@@ -1,7 +1,7 @@
 package com.zyz.service;
 
+import com.zyz.internalcommon.dto.PassengerUser;
 import com.zyz.mapper.PassengerUserMapper;
-import com.zyz.dto.PassengerUser;
 import com.zyz.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

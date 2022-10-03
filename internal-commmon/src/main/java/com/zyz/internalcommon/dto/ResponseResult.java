@@ -8,7 +8,7 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class ResponseResult<T> {
 
-    private String code;
+    private Integer code;
     private String message;
     private T data;
 
@@ -34,14 +34,14 @@ public class ResponseResult<T> {
      * 失败方法
      * code message
      * */
-    public static ResponseResult fail(String code, String message) {
+    public static ResponseResult fail(Integer code, String message) {
         return new ResponseResult().setCode(code).setMessage(message);
     }
 
     /*
     * 自定义失败，错误信息，错误码，具体错误
     * */
-    public static ResponseResult fail(String code, String message, Object data) {
+    public static ResponseResult fail(Integer code, String message, Object data) {
         return new ResponseResult().setCode(code).setMessage(message).setData(data);
     }
 
