@@ -4,6 +4,7 @@ import com.zyz.api.apipassenger.remote.ServicePassengerUserClient;
 import com.zyz.api.apipassenger.remote.ServiceVerifivationCodeClient;
 import com.zyz.internalcommon.constant.CommonStatusEnum;
 import com.zyz.internalcommon.constant.IdentityConstant;
+import com.zyz.internalcommon.constant.TokenConstant;
 import com.zyz.internalcommon.dto.ResponseResult;
 import com.zyz.internalcommon.request.VerificationCodeDTO;
 import com.zyz.internalcommon.response.NumberCodeResponse;
@@ -78,16 +79,21 @@ public class VerificationCodeService {
         //颁发令牌
         System.out.println("颁发令牌：");
         //不能使用魔法值 ，使用枚举类 或者class
-        String token = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
+        String accessToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstant.ACCESS_TOKEN_TYPE);
+        String refreshToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstant.REFRESH_TOKEN_TYPE);
 
-        String tokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY);
 
-        stringRedisTemplate.opsForValue().set(tokenKey, token,30,TimeUnit.DAYS);
+        String accessTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY,TokenConstant.ACCESS_TOKEN_TYPE);
+        stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken,30,TimeUnit.DAYS);
 
+        String refreshTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY,TokenConstant.REFRESH_TOKEN_TYPE);
+        stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken,31,TimeUnit.DAYS);
 
         //响应token
         TokenResponse tokenResponse  = new TokenResponse();
-        tokenResponse.setToken(token);
+        tokenResponse.setAccessToken(accessToken);
+        tokenResponse.setRefreshToken(refreshToken);
+
         return ResponseResult.success(tokenResponse);
     }
 }
