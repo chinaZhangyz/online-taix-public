@@ -9,7 +9,15 @@ public enum CommonStatusEnum {
     /*
     * 成功
     */
+
+    /*
+    * token类提示：1100-1199
+    * */
     TOKEN_ERROE(1199,"token 错误"),
+
+    /*用户不纯在类提示：1200-1299
+    * */
+    USER_NOT_EXIT(1200,"当前用户不存在"),
 
 
     SUCCESS(1,"success"),

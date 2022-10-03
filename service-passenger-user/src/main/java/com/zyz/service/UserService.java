@@ -1,11 +1,13 @@
 package com.zyz.service;
 
+import com.zyz.internalcommon.constant.CommonStatusEnum;
 import com.zyz.internalcommon.dto.PassengerUser;
 import com.zyz.mapper.PassengerUserMapper;
 import com.zyz.internalcommon.dto.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.security.PublicKey;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;
@@ -36,12 +38,23 @@ public class UserService {
             LocalDateTime now  = LocalDateTime.now();
             passengerUser.setGmtCreate(now);
             passengerUser.setGmtModified(now);
-
             passengerUserMapper.insert(passengerUser);
         }
 
         return ResponseResult.success();
 
+    }
+
+    public ResponseResult getUserByPhone(String passengerPhone){
+        Map<String,Object> map = new HashMap<>();
+        map.put("passenger_Phone", passengerPhone);
+        List<PassengerUser> passengerUsers = passengerUserMapper.selectByMap(map);
+        if (passengerUsers.size() == 0) {
+            return ResponseResult.fail(CommonStatusEnum.USER_NOT_EXIT.getCode(),CommonStatusEnum.USER_NOT_EXIT.getValue());
+        }else{
+            PassengerUser passengerUser = passengerUsers.get(0);
+            return ResponseResult.success(passengerUser);
+        }
     }
 
 }

@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @NoArgsConstructor
 public class PassengerUser {
-    private Integer id;
+    private Long id;
 
     private LocalDateTime gmtCreate;
 
