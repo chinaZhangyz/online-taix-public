@@ -77,10 +77,10 @@ public class VerificationCodeService {
 
 
         String accessTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
-        stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken,10,TimeUnit.SECONDS);
+        stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken,30,TimeUnit.DAYS);
 
         String refreshTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
-        stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken,30,TimeUnit.SECONDS);
+        stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken,31,TimeUnit.DAYS);
 
         //响应token
         TokenResponse tokenResponse  = new TokenResponse();
