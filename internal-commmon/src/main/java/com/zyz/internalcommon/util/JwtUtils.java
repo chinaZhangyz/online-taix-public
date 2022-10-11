@@ -11,6 +11,12 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * jwt工具类
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public class JwtUtils {
 
     /**

@@ -4,12 +4,17 @@ import com.zyz.api.apipassenger.remote.ServicePassengerUserClient;
 import com.zyz.internalcommon.dto.PassengerUser;
 import com.zyz.internalcommon.dto.ResponseResult;
 import com.zyz.internalcommon.dto.TokenResult;
-import com.zyz.internalcommon.request.VerificationCodeDTO;
 import com.zyz.internalcommon.util.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+/**
+ * 用户服务
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Service
 @Slf4j
 public class UserService {

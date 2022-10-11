@@ -6,6 +6,12 @@ import com.zyz.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * 用户控制器
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @RestController
 public class UserController {
 

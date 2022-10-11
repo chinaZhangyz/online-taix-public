@@ -18,6 +18,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 验证码服务
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Service
 public class VerificationCodeService {
     @Autowired

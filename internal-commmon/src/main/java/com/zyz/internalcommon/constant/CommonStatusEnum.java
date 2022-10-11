@@ -3,6 +3,12 @@ package com.zyz.internalcommon.constant;
 
 import lombok.Getter;
 
+/**
+ * 常见状态枚举
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public enum CommonStatusEnum {
 
     /**

@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 验证码控制器
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @RestController
 public class VerificationCodeController {
     @Autowired

@@ -14,6 +14,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 令牌服务
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Service
 public class TokenService {
     @Autowired

@@ -29,12 +29,24 @@ public class PassengerUser {
      */
     private String passengerPhone;
 
+    /**
+     * 乘客名字
+     */
     private String passengerName;
 
+    /**
+     * 乘客性别
+     */
     private Byte passengerGender;
 
+    /**
+     * 状态
+     */
     private Byte state;
 
+    /**
+     * 档案照片
+     */
     private String profilePhoto;
 
 }

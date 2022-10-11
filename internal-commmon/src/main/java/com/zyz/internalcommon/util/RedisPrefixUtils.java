@@ -1,8 +1,11 @@
 package com.zyz.internalcommon.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
-
+/**
+ * Resis跑龙套
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public class RedisPrefixUtils {
 
 
