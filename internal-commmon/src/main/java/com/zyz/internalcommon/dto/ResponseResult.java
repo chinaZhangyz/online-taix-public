@@ -16,6 +16,9 @@ public class ResponseResult<T> {
      * 消息
      */
     private String message;
+    /**
+     * 数据
+     */
     private T data;
 
 
