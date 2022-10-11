@@ -22,9 +22,9 @@ public class TestController {
 
     /**
      * 身份验证测试
-     *
+     * 没有token
      * @return {@link ResponseResult}
-     *///有token
+     */
     @GetMapping("/authTest")
     public ResponseResult authTest(){
         return ResponseResult.success("auth test");
