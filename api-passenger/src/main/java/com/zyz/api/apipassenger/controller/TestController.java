@@ -4,6 +4,10 @@ import com.zyz.internalcommon.dto.ResponseResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * @author zhang
+ * @date 2022/10/11
+ */
 @RestController
 public class TestController {
     /**
@@ -28,9 +32,9 @@ public class TestController {
 
     /**
      * noauth测试
-     *
+     * 没有token
      * @return {@link ResponseResult}
-     *///没有token
+     */
     @GetMapping("/noauthTest")
     public ResponseResult noauthTest(){
         return ResponseResult.success("noauth test");
