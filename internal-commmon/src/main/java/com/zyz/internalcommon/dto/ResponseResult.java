@@ -8,39 +8,67 @@ import lombok.experimental.Accessors;
 @Accessors(chain = true)
 public class ResponseResult<T> {
 
+    /**
+     * 验证码
+     */
     private Integer code;
+    /**
+     * 消息
+     */
     private String message;
     private T data;
 
-/*
-* 成功的方法
-* */
+
+    /**
+     * 成功
+     *
+     * @return {@link ResponseResult}
+     */
     public static <T> ResponseResult success(){
         return new ResponseResult().setCode(CommonStatusEnum.SUCCESS.getCode()).setMessage(CommonStatusEnum.SUCCESS.getValue());
     }
-    /*
-     * 成功方法
-     * data
-     * */
+
+    /**
+     * 成功
+     *
+     * @param data 数据
+     * @return {@link ResponseResult}
+     */
     public static <T> ResponseResult success(T data) {
         return new ResponseResult().setCode(CommonStatusEnum.SUCCESS.getCode()).setMessage(CommonStatusEnum.SUCCESS.getValue()).setData(data);
     }
 
-    //统一错误返回
+
+    /**
+     * 失败
+     *
+     * @param data 数据
+     * @return {@link ResponseResult}
+     */
     public static <T> ResponseResult fail(T data){
         return new ResponseResult().setData(data);
     }
-    /*
-     * 失败方法
-     * code message
-     * */
+
+    /**
+     * 失败
+     *
+     * @param code    代码
+     * @param message 消息
+     * @return {@link ResponseResult}
+     */
     public static ResponseResult fail(Integer code, String message) {
         return new ResponseResult().setCode(code).setMessage(message);
     }
 
-    /*
-    * 自定义失败，错误信息，错误码，具体错误
-    * */
+
+    /**
+     * 失败
+     *
+     * @param code    代码
+     * @param message 消息
+     * @param data    数据
+     * @return {@link ResponseResult}
+     */
     public static ResponseResult fail(Integer code, String message, Object data) {
         return new ResponseResult().setCode(code).setMessage(message).setData(data);
     }

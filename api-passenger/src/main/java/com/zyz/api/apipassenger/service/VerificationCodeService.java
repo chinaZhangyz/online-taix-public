@@ -30,7 +30,12 @@ public class VerificationCodeService {
     private StringRedisTemplate stringRedisTemplate;
 
 
-
+    /**
+     * 代码生成器
+     *
+     * @param passengerPhone 乘客电话
+     * @return {@link ResponseResult}
+     */
     public ResponseResult generatorCode(String passengerPhone) {
 
         //调用验证码服务，获取验证码
@@ -51,6 +56,13 @@ public class VerificationCodeService {
         return ResponseResult.success("");
     }
 
+    /**
+     * 校验码
+     *
+     * @param passengerPhone   乘客电话
+     * @param verificationCode 验证码
+     * @return {@link ResponseResult}
+     */
     public ResponseResult checkCode(String passengerPhone,String verificationCode) {
         //根据手机号，去redis读取验证码
         //生成key

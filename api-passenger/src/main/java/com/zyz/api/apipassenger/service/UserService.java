@@ -17,6 +17,12 @@ public class UserService {
     @Autowired
     ServicePassengerUserClient servicePassengerUserClient;
 
+    /**
+     * 获取用户访问令牌
+     *
+     * @param accessToken 访问令牌
+     * @return {@link ResponseResult}
+     */
     public ResponseResult getUserByAccessToken(String accessToken){
         //解析accessToken 拿到手机号
         log.info("accesstoken:"+accessToken);

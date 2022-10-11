@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @FeignClient("service-verification")
 public interface ServiceVerifivationCodeClient {
+    /**
+     * 得到数字代码
+     *
+     * @param size 大小
+     * @return {@link ResponseResult}<{@link NumberCodeResponse}>
+     */
     @RequestMapping(method = RequestMethod.GET,value = "/numberCode/{size}")
     ResponseResult<NumberCodeResponse> getNumberCode(@PathVariable("size") int size);
 }

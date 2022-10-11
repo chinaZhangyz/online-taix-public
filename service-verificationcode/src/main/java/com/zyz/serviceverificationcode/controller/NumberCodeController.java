@@ -9,6 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class NumberCodeController {
 
+    /**
+     * 数字验证码
+     *
+     * @param size 大小
+     * @return {@link ResponseResult}
+     */
     @GetMapping("/numberCode/{size}")
     public ResponseResult numberCode(@PathVariable("size") int size) {
         System.out.println("size：" + size);

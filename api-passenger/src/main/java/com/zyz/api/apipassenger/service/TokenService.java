@@ -19,6 +19,12 @@ public class TokenService {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
+    /**
+     * 刷新令牌
+     *
+     * @param refreshTokenSrc 刷新令牌src
+     * @return {@link ResponseResult}
+     */
     public ResponseResult refreshToken(String refreshTokenSrc) {
         //解析refreshToken
         TokenResult tokenResult = JwtUtils.checkToken(refreshTokenSrc);

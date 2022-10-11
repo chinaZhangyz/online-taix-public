@@ -16,6 +16,12 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.PrintWriter;
 
 
+/**
+ * jwt拦截器
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public class JwtInterceptor implements HandlerInterceptor {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;

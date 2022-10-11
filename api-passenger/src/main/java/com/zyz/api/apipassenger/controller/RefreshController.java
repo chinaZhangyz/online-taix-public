@@ -14,6 +14,12 @@ public class RefreshController {
     @Autowired
     private TokenService tokenService;
 
+    /**
+     * 刷新令牌
+     *
+     * @param tokenResponse 令牌响应
+     * @return {@link ResponseResult}
+     */
     @PostMapping("/token-refresh")
     public ResponseResult refreshToken(@RequestBody TokenResponse tokenResponse){
 

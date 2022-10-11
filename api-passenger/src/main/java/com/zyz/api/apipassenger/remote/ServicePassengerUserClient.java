@@ -14,10 +14,22 @@ import javax.xml.ws.Response;
 @FeignClient("service-passenger-user")
 public interface ServicePassengerUserClient {
 
+    /**
+     * 登录注册
+     *
+     * @param verificationCodeDTO 验证码dto
+     * @return {@link ResponseResult}
+     */
     @RequestMapping(method = RequestMethod.POST,value = "/user")
     public ResponseResult loginRegister(@RequestBody VerificationCodeDTO verificationCodeDTO);
 
 
+    /**
+     * 获取用户通过电话
+     *
+     * @param phone 电话
+     * @return {@link ResponseResult}<{@link PassengerUser}>
+     */
     @RequestMapping(method = RequestMethod.GET,value = "/user/{phone}")
     public ResponseResult<PassengerUser> getUserByPhone(@PathVariable("phone") String phone);
 }

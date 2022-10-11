@@ -12,16 +12,39 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class JwtUtils {
-    //盐
+
+    /**
+     * 标志
+     */
     private static final String SIGN = "CPFzyz!@#$$";
+    /**
+     * jwt关键电话
+     */
     private static final String JWT_KEY_PHONE = "passengerPhone";
+    /**
+     * jwt令牌类型
+     */
     private static final String JWT_TOKEN_TYPE = "tokenType";
 
-    //乘客是1， 司机是2
+    /**
+     * jwt关键身份
+     * 乘客是1， 司机是2
+     */
     private static final String JWT_KEY_IDENTITY = "identity";
+    /**
+     * jwt令牌时间
+     */
     private static final String JWT_TOKEN_TIME = "tokenTime";
 
-    //生成token
+
+    /**
+     * 发电机令牌
+     *
+     * @param passengerPhone 乘客电话
+     * @param identity       身份
+     * @param tokenType      令牌类型
+     * @return {@link String}
+     */
     public static String generatorToken(String passengerPhone, String identity, String tokenType) {
         Map<String, String> map = new HashMap<>();
         map.put(JWT_KEY_PHONE, passengerPhone);
@@ -43,7 +66,13 @@ public class JwtUtils {
         return sign;
     }
 
-    //解析token
+
+    /**
+     * 解析令牌
+     *
+     * @param token 令牌
+     * @return {@link TokenResult}
+     */
     public static TokenResult parseToken(String token){
         DecodedJWT verify = JWT.require(Algorithm.HMAC256(SIGN)).build().verify(token);
         String phone = verify.getClaim(JWT_KEY_PHONE).asString();

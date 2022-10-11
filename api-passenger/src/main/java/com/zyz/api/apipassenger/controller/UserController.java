@@ -15,6 +15,12 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    /**
+     * 获取用户
+     *
+     * @param request 请求
+     * @return {@link ResponseResult}
+     */
     @GetMapping("/users")
     public ResponseResult getUser(HttpServletRequest request) {
         String accessToken = request.getHeader("Authorization");

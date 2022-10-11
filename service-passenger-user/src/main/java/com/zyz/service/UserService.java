@@ -19,6 +19,12 @@ public class UserService {
     @Autowired
     private PassengerUserMapper passengerUserMapper;
 
+    /**
+     * 登录或注册
+     *
+     * @param passengerPhone 乘客电话
+     * @return {@link ResponseResult}
+     */
     public ResponseResult loginOrRegister(String passengerPhone) {
 
         System.out.println("user service被调用，手机号：" + passengerPhone);
@@ -45,6 +51,12 @@ public class UserService {
 
     }
 
+    /**
+     * 获取用户通过电话
+     *
+     * @param passengerPhone 乘客电话
+     * @return {@link ResponseResult}
+     */
     public ResponseResult getUserByPhone(String passengerPhone){
         Map<String,Object> map = new HashMap<>();
         map.put("passenger_Phone", passengerPhone);

@@ -6,18 +6,31 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class TestController {
+    /**
+     * 测试
+     *
+     * @return {@link String}
+     */
     @GetMapping("/test")
     public String test(){
         return "hello";
     }
 
-    //有token
+    /**
+     * 身份验证测试
+     *
+     * @return {@link ResponseResult}
+     *///有token
     @GetMapping("/authTest")
     public ResponseResult authTest(){
         return ResponseResult.success("auth test");
     }
 
-    //没有token
+    /**
+     * noauth测试
+     *
+     * @return {@link ResponseResult}
+     *///没有token
     @GetMapping("/noauthTest")
     public ResponseResult noauthTest(){
         return ResponseResult.success("noauth test");

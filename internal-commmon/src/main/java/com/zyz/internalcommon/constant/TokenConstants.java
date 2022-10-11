@@ -7,7 +7,13 @@ import lombok.Data;
 * */
 
 public class TokenConstants {
+    /**
+     * 访问令牌类型
+     */
     public static final String ACCESS_TOKEN_TYPE = "accessToken";
+    /**
+     * 刷新令牌类型
+     */
     public static final String REFRESH_TOKEN_TYPE = "refreshToken";
 
 }
