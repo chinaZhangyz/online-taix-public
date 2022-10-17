@@ -2,8 +2,13 @@ package com.zyz.internalcommon.constant;
 
 import lombok.Data;
 
+/**
+ * 身份常量
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Data
-public class IdentityConstant {
+public class IdentityConstants {
     /**
      * 旅客身份
      */

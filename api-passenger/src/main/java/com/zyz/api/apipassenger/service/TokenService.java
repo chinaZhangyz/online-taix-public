@@ -2,8 +2,8 @@ package com.zyz.api.apipassenger.service;
 
 import com.zyz.internalcommon.constant.CommonStatusEnum;
 import com.zyz.internalcommon.constant.TokenConstants;
-import com.zyz.internalcommon.dto.ResponseResult;
-import com.zyz.internalcommon.dto.TokenResult;
+import com.zyz.internalcommon.dao.ResponseResult;
+import com.zyz.internalcommon.dao.TokenResult;
 import com.zyz.internalcommon.response.TokenResponse;
 import com.zyz.internalcommon.util.JwtUtils;
 import com.zyz.internalcommon.util.RedisPrefixUtils;
@@ -14,6 +14,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 令牌服务
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Service
 public class TokenService {
     @Autowired

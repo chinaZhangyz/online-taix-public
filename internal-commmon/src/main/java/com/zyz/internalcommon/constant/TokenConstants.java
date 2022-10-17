@@ -6,6 +6,12 @@ import lombok.Data;
 * token常量类
 * */
 
+/**
+ * 令牌常量
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public class TokenConstants {
     /**
      * 访问令牌类型

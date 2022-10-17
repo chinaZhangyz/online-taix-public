@@ -2,7 +2,7 @@ package com.zyz.api.apipassenger.controller;
 
 
 import com.zyz.api.apipassenger.service.VerificationCodeService;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.request.VerificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -10,6 +10,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 验证码控制器
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @RestController
 public class VerificationCodeController {
     @Autowired

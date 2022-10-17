@@ -5,6 +5,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/**
+ * 拦截器配置
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Configuration
 public class InterceptorConfig implements WebMvcConfigurer {
 
@@ -32,6 +38,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
                 //不拦截的路径
                 .excludePathPatterns("/noauthTest")
+                .excludePathPatterns("/forecast-price")
                 .excludePathPatterns("/verification-code")
                 .excludePathPatterns("/token-refresh")
                 .excludePathPatterns("/users")

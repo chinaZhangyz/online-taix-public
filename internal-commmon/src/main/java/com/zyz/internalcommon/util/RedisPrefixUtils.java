@@ -1,8 +1,11 @@
 package com.zyz.internalcommon.util;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.core.StringRedisTemplate;
-
+/**
+ * Redis工具类
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 public class RedisPrefixUtils {
 
 
@@ -33,7 +36,7 @@ public class RedisPrefixUtils {
      *
      * @param passengerPhone 乘客电话
      * @return {@link String}
-     *///生成key
+     */ //生成key
     public static String generatorKeyByPhone(String passengerPhone){
         return verificationCodePrefix+passengerPhone;
     }

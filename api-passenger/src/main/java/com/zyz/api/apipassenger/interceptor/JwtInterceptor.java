@@ -1,8 +1,8 @@
 package com.zyz.api.apipassenger.interceptor;
 
 import com.zyz.internalcommon.constant.TokenConstants;
-import com.zyz.internalcommon.dto.ResponseResult;
-import com.zyz.internalcommon.dto.TokenResult;
+import com.zyz.internalcommon.dao.ResponseResult;
+import com.zyz.internalcommon.dao.TokenResult;
 import com.zyz.internalcommon.util.JwtUtils;
 import com.zyz.internalcommon.util.RedisPrefixUtils;
 import net.sf.json.JSONObject;
@@ -26,6 +26,15 @@ public class JwtInterceptor implements HandlerInterceptor {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;
 
+    /**
+     * 前处理
+     *
+     * @param request  请求
+     * @param response 响应
+     * @param handler  处理程序
+     * @return boolean
+     * @throws Exception 异常
+     */
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
 

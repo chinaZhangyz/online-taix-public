@@ -2,13 +2,19 @@ package com.zyz.api.apipassenger.controller;
 
 
 import com.zyz.api.apipassenger.service.TokenService;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.response.TokenResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+/**
+ * 刷新控制器
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @RestController
 public class RefreshController {
     @Autowired

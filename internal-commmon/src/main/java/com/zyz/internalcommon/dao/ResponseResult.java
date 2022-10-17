@@ -1,9 +1,15 @@
-package com.zyz.internalcommon.dto;
+package com.zyz.internalcommon.dao;
 
 import com.zyz.internalcommon.constant.CommonStatusEnum;
 import lombok.Data;
 import lombok.experimental.Accessors;
 
+/**
+ * 响应结果
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Data
 @Accessors(chain = true)
 public class ResponseResult<T> {
@@ -16,6 +22,9 @@ public class ResponseResult<T> {
      * 消息
      */
     private String message;
+    /**
+     * 数据
+     */
     private T data;
 
 

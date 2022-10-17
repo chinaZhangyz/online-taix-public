@@ -3,9 +3,9 @@ package com.zyz.api.apipassenger.service;
 import com.zyz.api.apipassenger.remote.ServicePassengerUserClient;
 import com.zyz.api.apipassenger.remote.ServiceVerifivationCodeClient;
 import com.zyz.internalcommon.constant.CommonStatusEnum;
-import com.zyz.internalcommon.constant.IdentityConstant;
+import com.zyz.internalcommon.constant.IdentityConstants;
 import com.zyz.internalcommon.constant.TokenConstants;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.request.VerificationCodeDTO;
 import com.zyz.internalcommon.response.NumberCodeResponse;
 import com.zyz.internalcommon.response.TokenResponse;
@@ -18,6 +18,12 @@ import org.springframework.stereotype.Service;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * 验证码服务
+ *
+ * @author zhang
+ * @date 2022/10/11
+ */
 @Service
 public class VerificationCodeService {
     @Autowired
@@ -56,6 +62,7 @@ public class VerificationCodeService {
         return ResponseResult.success("");
     }
 
+
     /**
      * 校验码
      *
@@ -84,14 +91,13 @@ public class VerificationCodeService {
         //颁发令牌
 //        System.out.println("颁发令牌：");
         //不能使用魔法值 ，使用枚举类 或者class
-        String accessToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
-        String refreshToken = JwtUtils.generatorToken(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
+        String accessToken = JwtUtils.generatorToken(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
+        String refreshToken = JwtUtils.generatorToken(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
 
-
-        String accessTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
+        String accessTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.ACCESS_TOKEN_TYPE);
         stringRedisTemplate.opsForValue().set(accessTokenKey, accessToken,30,TimeUnit.DAYS);
 
-        String refreshTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstant.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
+        String refreshTokenKey = RedisPrefixUtils.generatorTokenKey(passengerPhone, IdentityConstants.PASSENGER_IDENTITY, TokenConstants.REFRESH_TOKEN_TYPE);
         stringRedisTemplate.opsForValue().set(refreshTokenKey, refreshToken,31,TimeUnit.DAYS);
 
         //响应token
