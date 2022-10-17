@@ -3,27 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="647cff7f-21d7-4e05-a8ca-843a3c4606e0" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/src/main/java/com/zyz/api/apipassenger/interceptor/InterceptorConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/RefreshController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/RefreshController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/TestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/TestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/VerificationCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/controller/VerificationCodeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/InterceptorConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/interceptor/JwtInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/remote/ServicePassengerUserClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/remote/ServicePassengerUserClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/remote/ServiceVerifivationCodeClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/remote/ServiceVerifivationCodeClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/TokenService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/api-passenger/target/classes/com/zyz/api/apipassenger/service/VerificationCodeService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/dto/PassengerUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/dto/ResponseResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/dto/TokenResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/internal-commmon/target/classes/com/zyz/internalcommon/util/JwtUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/mapper/PassengerUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/mapper/PassengerUserMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-passenger-user/target/classes/com/zyz/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service-verificationcode/target/classes/com/zyz/serviceverificationcode/controller/NumberCodeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/service-verificationcode/target/classes/com/zyz/serviceverificationcode/controller/NumberCodeController.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +106,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ApiPasserngerApplication">
+  <component name="RunManager" selected="Spring Boot.ServicePriceApplication">
     <configuration name="JwtUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zyz.internalcommon.util.JwtUtils" />
       <module name="internal-commmon" />
@@ -174,6 +153,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServicePriceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="servcie-price" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zyz.serviceprice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zyz.serviceprice.ServicePriceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ServiceVerificationcodeApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="service-verificationcode" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zyz.serviceverificationcode.ServiceVerificationcodeApplication" />
@@ -183,6 +175,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.ServicePriceApplication" />
         <item itemvalue="Spring Boot.ApiPasserngerApplication" />
         <item itemvalue="Application.JwtUtils" />
         <item itemvalue="Application.NumberCodeController" />
@@ -251,7 +244,7 @@
       <workItem from="1665543705492" duration="11000" />
       <workItem from="1665543750203" duration="5000" />
       <workItem from="1665977130052" duration="2662000" />
-      <workItem from="1665996689805" duration="2783000" />
+      <workItem from="1665996689805" duration="3884000" />
     </task>
     <servers />
   </component>
