@@ -2,7 +2,7 @@ package com.zyz.api.apipassenger.controller;
 
 
 import com.zyz.api.apipassenger.service.TokenService;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.response.TokenResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;

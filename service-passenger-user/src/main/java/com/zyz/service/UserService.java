@@ -1,13 +1,12 @@
 package com.zyz.service;
 
 import com.zyz.internalcommon.constant.CommonStatusEnum;
-import com.zyz.internalcommon.dto.PassengerUser;
+import com.zyz.internalcommon.dao.PassengerUser;
 import com.zyz.mapper.PassengerUserMapper;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.security.PublicKey;
 import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.List;

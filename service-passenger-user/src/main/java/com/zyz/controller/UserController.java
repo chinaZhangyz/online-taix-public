@@ -1,6 +1,6 @@
 package com.zyz.controller;
 
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.request.VerificationCodeDTO;
 import com.zyz.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

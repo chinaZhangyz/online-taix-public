@@ -1,10 +1,9 @@
 package com.zyz.api.apipassenger.controller;
 
 import com.zyz.api.apipassenger.service.UserService;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;

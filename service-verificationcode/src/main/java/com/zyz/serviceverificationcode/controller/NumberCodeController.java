@@ -1,6 +1,6 @@
 package com.zyz.serviceverificationcode.controller;
 
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.response.NumberCodeResponse;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

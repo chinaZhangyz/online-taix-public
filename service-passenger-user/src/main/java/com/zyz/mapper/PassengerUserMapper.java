@@ -1,7 +1,7 @@
 package com.zyz.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.zyz.internalcommon.dto.PassengerUser;
+import com.zyz.internalcommon.dao.PassengerUser;
 import org.springframework.stereotype.Repository;
 
 /**

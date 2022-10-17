@@ -1,4 +1,4 @@
-package com.zyz.internalcommon.dto;
+package com.zyz.internalcommon.dao;
 
 import com.zyz.internalcommon.constant.CommonStatusEnum;
 import lombok.Data;

@@ -2,7 +2,7 @@ package com.zyz.api.apipassenger.controller;
 
 
 import com.zyz.api.apipassenger.service.VerificationCodeService;
-import com.zyz.internalcommon.dto.ResponseResult;
+import com.zyz.internalcommon.dao.ResponseResult;
 import com.zyz.internalcommon.request.VerificationCodeDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

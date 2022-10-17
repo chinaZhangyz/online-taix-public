@@ -1,9 +1,9 @@
 package com.zyz.api.apipassenger.service;
 
 import com.zyz.api.apipassenger.remote.ServicePassengerUserClient;
-import com.zyz.internalcommon.dto.PassengerUser;
-import com.zyz.internalcommon.dto.ResponseResult;
-import com.zyz.internalcommon.dto.TokenResult;
+import com.zyz.internalcommon.dao.PassengerUser;
+import com.zyz.internalcommon.dao.ResponseResult;
+import com.zyz.internalcommon.dao.TokenResult;
 import com.zyz.internalcommon.util.JwtUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;

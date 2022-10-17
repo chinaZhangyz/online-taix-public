@@ -1,4 +1,4 @@
-package com.zyz.internalcommon.dto;
+package com.zyz.internalcommon.dao;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
