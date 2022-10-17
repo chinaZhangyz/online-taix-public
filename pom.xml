@@ -8,6 +8,7 @@
         <module>service-verificationcode</module>
         <module>internal-commmon</module>
         <module>servcie-price</module>
+        <module>service-map</module>
     </modules>
 
     <parent>

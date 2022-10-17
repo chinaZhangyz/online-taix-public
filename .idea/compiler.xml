@@ -8,10 +8,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="api-passenger" />
+        <module name="internal-commmon" />
+        <module name="service-passenger-user" />
         <module name="service-verificationcode" />
         <module name="servcie-price" />
-        <module name="service-passenger-user" />
-        <module name="internal-commmon" />
+        <module name="service-map" />
       </profile>
     </annotationProcessing>
   </component>
@@ -20,6 +21,7 @@
       <module name="api-passenger" options="-parameters" />
       <module name="internal-commmon" options="-parameters" />
       <module name="servcie-price" options="-parameters" />
+      <module name="service-map" options="-parameters" />
       <module name="service-passenger-user" options="-parameters" />
       <module name="service-verificationcode" options="-parameters" />
     </option>
