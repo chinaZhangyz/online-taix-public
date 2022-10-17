@@ -38,6 +38,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 
                 //不拦截的路径
                 .excludePathPatterns("/noauthTest")
+                .excludePathPatterns("/forecast-price")
                 .excludePathPatterns("/verification-code")
                 .excludePathPatterns("/token-refresh")
                 .excludePathPatterns("/users")
